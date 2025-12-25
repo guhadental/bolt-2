@@ -1,0 +1,96 @@
+.hero {
+      background: linear-gradient(rgba(42, 109, 181, 0.8), rgba(42, 109, 181, 0.9)), url('https://images.pexels.com/photos/38730/health-dental-dentistry-teeth-38730.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center/cover no-repeat;
+      color: white;
+      padding: 150px 0 100px;
+      margin-top: 80px;
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-text h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .hero-info {
+      display: grid;
+      gap: 20px;
+    }
+
+    .info-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: var(--border-radius);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .info-icon {
+      font-size: 2rem;
+      margin-right: 15px;
+      background: rgba(255, 255, 255, 0.2);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .info-text h3 {
+      color: white;
+      margin-bottom: 5px;
+    }
+
+    .info-text p {
+      margin: 0;
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 992px) {
+      .hero {
+        padding: 120px 0 80px;
+      }
+      
+      .hero-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+      
+      .hero-text h1 {
+        font-size: 2.8rem;
+      }
+      
+      .hero-buttons {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 100px 0 60px;
+      }
+      
+      .hero-text h1 {
+        font-size: 2.3rem;
+      }
+    }
